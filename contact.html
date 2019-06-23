@@ -1,0 +1,43 @@
+---
+layout: page
+title: Contact
+permalink: /contact/
+---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<div id="Success" style="display: none; text-align: center">
+<h1 class="themed-title">Success!</h1>
+<button id="new" type="new">Submit Another Response</button>
+</div>
+<form id="Form" name="submit-to-google-sheet">
+  <input id="first" name="first" type="text" placeholder="First Name*" required>
+  <input id="last" name="last" type="text"  placeholder="Last Name*" required>
+  <input id="email" name="email" type="email" placeholder="Email*" required>
+  <input id="phone" class="phone_us" name="telephone" type="text" data-mask="(000) 000-0000" placeholder="Phone Number">
+  <input id="subject" name="subject" placeholder="Subject">
+  <textarea id="message" name="message" placeholder="Message" style="height: 115px;"></textarea>
+  <button type="submit">Send</button>
+  <div id="successBox" style="display: none; width: 40px; height: 20px; background-color: #222;">
+    <p style="color: #000;">sucess</p>
+  </div>
+</form>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx9tfx7-WH2aR0ZtUytYA128wElGXTNO4LIAfFW1wN9yVmXJAep/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response), document.getElementById('first').value='', document.getElementById('last').value='', document.getElementById('email').value='', document.getElementById('phone').value='', document.getElementById('subject').value='', document.getElementById('message').value='', document.getElementById('Form').style.display='none', document.getElementById('Success').style.display='block')
+      .catch(error => console.error('Error!', error.message))
+  });
+
+
+  $(document).ready(function(){
+    $('.phone_us').mask('(000) 000-0000');
+    $('#new').on("click",function(){
+    	Success.style.display = "none";
+      Form.style.display = "block";
+    })
+  });
+</script>

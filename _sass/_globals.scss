@@ -1,0 +1,220 @@
+@import "colors";
+
+// General
+
+html, body {
+	height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFFF;
+}
+
+* {
+  font-family: 'PT Sans', Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+// CSS for ID
+#page-container {
+	position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+	padding-bottom: 140px;;
+}
+.content {
+	max-width: 860px;
+	margin: 0 auto;
+	padding: 2.5em;
+}
+.topNav {
+  overflow: hidden;
+  text-align: center;
+  background-color: #FFF;
+}
+.topNav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.navbar-nav {
+  margin-top: 35px;
+  background-color: $themeMain;
+  max-height: 50px;
+}
+.navbar-nav>li>a {
+  height: auto;
+}
+.navbar-nav>li.active>a {
+  color: #2e2e2e;
+}
+.navbar-nav>li:hover {
+  background-color: #2e2e2e2e;
+}
+.navbar-nav>li>a:hover {
+    color: #5E5E5E;
+}
+.navbar-nav>li:hover {
+		background-color: $themeMain;
+}
+.container-fluid {
+  display: inline-block;
+  margin: 15px auto;
+}
+.homeButtonImage {
+  height: 120px;
+  padding: 0;
+}
+p {
+  font-size: 14px;
+	margin: 0 0 20px;
+}
+.post-title {
+	color: $themeMain;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 30px;
+}
+.themed-title {
+	color: $themeMain;
+	margin-bottom: 30px;
+}
+input, textarea {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+	resize: vertical;
+}
+button[type=submit] {
+  width: 20%;
+  background-color: $themeMain;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+	display: block;
+}
+button[type=new] {
+  width: 40%;
+  background-color: $themeMain;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+	display: block;
+}
+form {
+	text-align: center;
+}
+#footer {
+		position: absolute;
+	  bottom: 0;
+	  width: 100%;
+		height: 130px;
+    border-top: 1px solid #e5e5e5;
+    float: left;
+    clear: both;
+}
+.copyright {
+	text-align: center;
+	display: block;
+}
+.slogan {
+	color: $themeMain;
+	margin: 0 0;
+}
+.credits {
+	margin-bottom: 10px;
+	color: #333;
+	opacity: .8;
+}
+.social {
+	text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+.theatre {
+	height: 50px;
+}
+.grid-item {
+  float: left;
+	width: calc(100%/3);
+}
+.grid-item>img {
+	max-width:100%;
+}
+// Blog
+.postMeta {
+	text-transform: uppercase;
+	opacity: 0.7;
+}
+.postTitle {
+}
+.postHeading {
+	text-align: center;
+}
+.postTopImage {
+	width: 60%;
+	margin: 0 20%;
+	margin-bottom: 30px;
+}
+.postBottomImage {
+	width: 100%;
+	margin-bottom: 30px
+}
+.postMessage {
+	margin-bottom: 30px;
+}
+.post{
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 30px;
+}
+#postContainer {
+	max-width: 720px;
+	margin: 0 auto;
+}
+#postContainer>img {
+	max-width: 100%;
+}
+#postContainer>p {
+	max-width: 100%;
+}
+#latestPosts {
+	max-width: 720px;
+	margin: 0 auto;
+}
+#latestPosts>img {
+	max-width: 100%;
+}
+#latestPosts>p {
+	max-width: 100%;
+}

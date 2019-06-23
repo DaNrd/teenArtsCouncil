@@ -1,0 +1,17 @@
+title: Teen Arts Council
+email: teenartscouncil@cityofpaloalto.org
+description: >- # this means to ignore newlines until "baseurl:"
+  The Teen Arts Council is a creative community of Palo Alto teens
+  dedicated to enriching the lives of their peers through artistic
+  expression. Towards this end, we coordinate events and projects
+  inspired by the passions of council members. We take pride in
+  connecting teens with the financial and logistical resources to
+  carry out their imaginative ideas.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+markdown: kramdown
+theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock

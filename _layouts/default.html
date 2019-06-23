@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+	{% include head.html %}
+	<body>
+	<div id="page-container">
+	<div id="content-wrap">
+		<!-- Naviagion -->
+		<nav class="topNav justify-content-center">
+		  <div class="container-fluid justify-content-center">
+		    <div class="navbar-header">
+		      <a class="homeButtonImage, avtive" href="/">
+		          <img class="homeButtonImage" src="/assets/images/logo.png"></img>
+		      </a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li id="home"><a href="/">Home</a></li>
+		      <li id="about"><a href="/about">About</a></li>
+		      <li id="blog"><a href="/blog">Blog</a></li>
+		      <li id="gallery"><a href="/gallery">Gallery</a></li>
+		      <li id="calendar"><a href="/calendar">Calendar</a></li>
+		      <li id="sponsors"><a href="/sponsors">Sponsors</a></li>
+		      <li id="contact"><a href="/contact">Contact</a></li>
+		    </ul>
+		  </div>
+		</nav>
+
+		<div class="content">
+			{{content}}
+		</div>
+	</div>
+		<footer id="footer">
+			<nav class="social clear">
+				<a style="margin-top: 20px;" class="fa fa-twitter" href="https://twitter.com/teenartscouncil" title="Twitter"></a>
+				<a style="margin-top: 20px;" class="fa fa-facebook" href="https://www.facebook.com/teenartscouncil" title="Facebook"></a>
+				<a style="margin-top: 20px;" class="fa fa-rss" href="http://www.teenartscouncil.org/feed/rss/" title="RSS"></a>
+				<a style="margin-top: 20px;" href="https://cityofpaloalto.org/gov/depts/csd/theatre/default.asp" title="Children's Theatre"><img class="theatre" src="http://www.teenartscouncil.org/wp-content/uploads/2014/01/palo_alto_logo.jpg"></a>
+			</nav>
+			<div style="margin-top: 10px;" class="copyright">
+					<p class="slogan">Teen Arts Council: strengthening the teen community with arts events</p>
+					<p class="credits">Site design by <a class="link" href="http://aaron.keydesign.com" target="_">Aaron Campbell</a></p>
+			</div>
+		</footer>
+	</div>
+	</body>
+	{% include footer.html %}
+</html>
