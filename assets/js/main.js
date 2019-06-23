@@ -42,7 +42,7 @@ jQuery(window).on("load", function(){
   			posts = data.slice();
         console.log(posts);
         // Displays images in reverse order
-        for (var i = posts.length - 1; posts.length - 3 < i; i--){
+        for (var i = posts.length - 1; posts.length < i; i--){
           var formattedPosts;
           if (posts[i].customHTML != null) {
             formattedPosts = posts[i].customHTML;
@@ -58,7 +58,7 @@ jQuery(window).on("load", function(){
       $.getJSON('https://api.sheety.co/414d93bc-2d61-4014-a4d0-8b76015cbc6f', function(data) {
   			image = data.slice();
         // Displays images in reverse order
-        for (var i = image.length - 1; image.length - 6 < i; i--){
+        for (var i = image.length - 1; image.length - 3 < i; i--){
           var imageDiv = "<div class=\"grid-item\" href=\"" + image[i].link + "\" alt=\"" + image[i].altText + "\"><img src=\"" + image[i].image + "\"></div>";
           returnImageDiv += imageDiv;
         }
