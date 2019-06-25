@@ -3,7 +3,7 @@ jQuery(window).on("load", function(){
     // For Gallery
     var image; // List of all Images
     var returnImageDiv = "";
-    $.getJSON('https://api.sheety.co/414d93bc-2d61-4014-a4d0-8b76015cbc6f', function(data) {
+    $.getJSON('https://api.sheety.co/36fad721-2407-41f6-a1c1-f15f971d451d', function(data) {
 			image = data.slice();
       // Displays images in reverse order
       for (var i = image.length - 1; -1 < i; i--){
@@ -20,7 +20,7 @@ jQuery(window).on("load", function(){
       // For Blog
       var posts; // List of all Images
       var returnPosts = "";
-      $.getJSON('https://api.sheety.co/709d7e3b-8e60-4442-985c-b5fd151dda4e', function(data) {
+      $.getJSON('https://api.sheety.co/ccf62f12-65ee-4720-82df-5ab3434a15de', function(data) {
   			posts = data.slice();
         // Displays images in reverse order
         for (var i = posts.length - 1; -1 < i; i--){
@@ -38,7 +38,7 @@ jQuery(window).on("load", function(){
       // For Home Page
       var posts; // List of all Images
       var returnPosts = "";
-      $.getJSON('https://api.sheety.co/709d7e3b-8e60-4442-985c-b5fd151dda4e', function(data) {
+      $.getJSON('https://api.sheety.co/ccf62f12-65ee-4720-82df-5ab3434a15de', function(data) {
   			posts = data.slice();
         console.log(posts);
         // Displays images in reverse order
@@ -55,7 +55,7 @@ jQuery(window).on("load", function(){
   		});
       var image; // List of all Images
       var returnImageDiv = "";
-      $.getJSON('https://api.sheety.co/414d93bc-2d61-4014-a4d0-8b76015cbc6f', function(data) {
+      $.getJSON('https://api.sheety.co/36fad721-2407-41f6-a1c1-f15f971d451d', function(data) {
   			image = data.slice();
         // Displays images in reverse order
         for (var i = image.length - 1; image.length - 3 < i; i--){

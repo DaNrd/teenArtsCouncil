@@ -34,7 +34,7 @@ html, body {
 .navbar-nav {
   margin-top: 35px;
   background-color: #4791fe;
-  max-height: 50px; }
+  height: auto; }
 
 .navbar-nav > li > a {
   height: auto; }
